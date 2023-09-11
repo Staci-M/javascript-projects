@@ -1,4 +1,15 @@
 // Initialize Variables below
+let spaceShuttleName = 'Determination';
+let shuttleSpeedMph = 17500;
+let distanceToMarsKm = 225000000;
+let distanceToMoonKm = 384400;
+let milesPerKm = 0.621;
+
+console.log(typeof spaceShuttleName);
+console.log(typeof shuttleSpeedMph);
+console.log(typeof distanceToMarsKm);
+console.log(distanceToMoonKm);
+console.log(milesPerKm);
 
 // add logic below to verify total number of astronauts for shuttle launch does not exceed 7
 
