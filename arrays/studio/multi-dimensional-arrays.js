@@ -42,4 +42,3 @@ if(Number(userCabinet) < 0 ||  Number(userCabinet > 3)){
 }
 
 
-//(cargoHold.includes(cargoHold[userCabinet][userItem]))
