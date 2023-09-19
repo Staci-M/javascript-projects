@@ -5,7 +5,7 @@ let str = "LaunchCode";
 //Hint - define another variable to hold the new string or reassign the new string to str.
 
 let cutStr = str.slice(0,3);
-let newStr = str.substring(3, 10).concat(str.slice(0,3));
+let newStr = str.substring(3, str.length).concat(str.slice(0,3));
 console.log(cutStr);
 console.log(newStr);
 
@@ -16,7 +16,7 @@ console.log(`The original string is: ${str}\nThe original cut string is: ${cutSt
 //2) Modify your code to accept user input. Query the user to enter the number of letters that will be relocated.
 let userInput = input.question("How many letters would you like relocated? ");
 let userCutStr = str.slice(0, Number(userInput));
-let userNewStr = str.substring(Number(userInput), 10).concat(str.slice(0,Number(userInput)));
+let userNewStr = str.substring(Number(userInput), str.length).concat(str.slice(0,Number(userInput)));
 
 //3) Add validation to your code to deal with user inputs that are longer than the word. In such cases, default to moving 3 characters. Also, the template literal should note the error.
 if(userInput > str.length){
