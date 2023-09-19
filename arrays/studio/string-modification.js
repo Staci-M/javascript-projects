@@ -21,7 +21,7 @@ let userNewStr = str.substring(Number(userInput), str.length).concat(str.slice(0
 //3) Add validation to your code to deal with user inputs that are longer than the word. In such cases, default to moving 3 characters. Also, the template literal should note the error.
 if(userInput > str.length){
 userCutStr = str.slice(0,3);
-userNewStr = str.substring(3, 10).concat(str.slice(0,3));
+userNewStr = str.substring(3, str.length).concat(str.slice(0,3));
 console.log(`Sorry, your input: ${userInput}, was longer than than the word's character length...3 characters were removed from the original string and placed them at the end. Here is your modified word: ${userNewStr}`);
 } else{
     console.log(`I've removed ${userInput} characters from the original string and placed them at the end. Here is your modified word: ${userNewStr}`);
