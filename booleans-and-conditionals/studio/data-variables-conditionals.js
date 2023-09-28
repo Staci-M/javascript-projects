@@ -37,7 +37,6 @@ if(astronautCount > 7 ){
     astronautStatus = 'not ready';
 } else {astronautStatus = 'ready';
 }
-console.log(astronautStatus);
 // add logic below to verify all astronauts are ready
 if(astronautStatus !== 'ready'){
     preparedForLiftOff = false;
@@ -73,4 +72,4 @@ exitMessage = 'Not today, but your time will come astronauts!'
 }
 
 
-console.log(`${statusMessage}\n${line}\nDate: ${date}\nTime: ${time}\nAstronaut Count: ${astronautCount}\nCrew Mass: ${crewMassKg}\nFuel Mass: ${fuelMassKg}\nShuttle Mass: ${shuttleMassKg}\nTotal Mass: ${totalMassKg}\nFuel Temperature: ${fuelTempCelsius}\nWeather Status:${weatherStatus}\n${line}\n${exitMessage}`);
+console.log(`${statusMessage}\n${line}\nDate: ${date}\nTime: ${time}\nAstronaut Count: ${astronautCount}\nCrew Mass: ${crewMassKg}\nFuel Mass: ${fuelMassKg}\nShuttle Mass: ${shuttleMassKg}\nTotal Mass: ${totalMassKg}\nFuel Temperature: ${fuelTempCelsius}\nWeather Status: ${weatherStatus}\n${line}\n${exitMessage}`);

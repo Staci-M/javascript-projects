@@ -75,3 +75,11 @@ function makeDiamond(char, height){
 return diamond;
 }
 console.log(makeDiamond('X', 5));
+
+let num = 42;
+
+function isEven (num) {
+   return num % 2 === 0;
+}
+
+console.log(isEven(43))

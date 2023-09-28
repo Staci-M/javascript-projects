@@ -12,6 +12,7 @@ let desserts = ['apple', 'banana', 'more kale', 'ice cream', 'chocolate', 'kiwi'
 function mealAssembly(protein, grains, veggies, beverages, desserts, numMeals) {
   let pantry = [protein, grains, veggies, beverages, desserts];
   let meals = [];
+  let meal = [];
   
   
   /// Part A #2: Write a ``for`` loop inside this function
@@ -19,7 +20,7 @@ function mealAssembly(protein, grains, veggies, beverages, desserts, numMeals) {
 
 //Variable to keep count of how many meals; If meal variable is less than the numMeals length keep going
 for(let mealVar = 0; mealVar < numMeals; mealVar++){
-  let meal = []
+  meal = [];
   //for each mealVar, pantryVaR needs to loop through each pantry item
   for(let pantryVar = 0; pantryVar < pantry.length; pantryVar ++){
     meal.push(pantry[pantryVar][mealVar]);
@@ -49,7 +50,7 @@ function generatePassword(string1, string2) {
 //   /// Code your Bonus Mission Solution here ///
   for(let i = 0; i < string1.length || i < string2.length; i++){
     code += sting1[i];
-    code =+ string2[i]
+    code =+ string2[i];
   }
 
   return code;

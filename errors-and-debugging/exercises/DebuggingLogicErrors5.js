@@ -1,6 +1,7 @@
 // The value of launchReady assigned in the first if/else block gets changed in the second if/else block. Dangerous waters...
 // Since the issue is with launchReady, ONE way to fix the logic error is to use a different variable to store the fuel check result. 
 // Refactor the code to do this. Verify that your change works by updating the console.log statements.
+const input = require('readline-sync');
 
 let launchReady = false;
 let fuelReady = false;
@@ -33,3 +34,5 @@ if(launchReady && fuelReady){
 }else{
    console.log('Launch Scrubbed');
 }
+
+myName = input.question('What is your name');
