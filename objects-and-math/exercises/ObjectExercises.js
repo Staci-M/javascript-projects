@@ -88,24 +88,19 @@ let crewReports = function(animal){
 
 crewReports(dog);
 
-let fitnessTest = function(array){
-   
-for(let i = 0; i < array.length; i++){
-   let testResult = 0
-   let testResults = [];
-   for(let j = 1; testResult < 20; j++){
-      testResult += array[i].move();
-      console.log(testResult);
-      console.log(j);
-      if(testResult >= 20){
-         console.log(`${array[i].name} took ${j} turns to take 20 steps.`)
-         testResult = 0;
-
-      }
-
-   }
-
+let fitnessTest = function(participants){
+ let results = [];
+ for (let i = 0; i < participants.length; i++){
+     let stepCount = 0;
+     let moves = 0;
+     while(stepCount < 20){
+     stepCount += participants[i].move();
+     moves++;
+     }
+     results.push(`${participants[i].name} took ${moves} turns to take 20 steps.`);
+ }
+ return results;
 }
-};
+   
 
 console.log(fitnessTest(crew));
